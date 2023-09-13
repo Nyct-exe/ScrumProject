@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>To Do</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link rel="Stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" />
+		<link rel="Stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap-theme.min.css" />
+		<link rel="Stylesheet" href="./taskpaper.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1>Tasks</h1>
+					<div id="scratchTasks" class="taskDiv"></div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+		<script src="./taskpaper.js"></script>
+		<script type="text/JavaScript">
+			$(document).ready(function(){
+				new TaskPaperPanel('#scratchTasks', 'https://www.dl.dropboxusercontent.com/s/pm0zieqbbq5gjv9/taskpaper.taskpaper', 4000);
+			});
+		</script>
+	</body>
+</html>
